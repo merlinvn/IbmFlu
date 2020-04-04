@@ -1,0 +1,12 @@
+- Keep track infections
+
+- Data to Test Config Parameters
+
+- Keep track all virus that infected in 1 individual???
+
+- Age specific data??
+
+
+- Logger
+
+

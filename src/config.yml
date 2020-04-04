@@ -1,0 +1,111 @@
+total_time: 400
+
+number_of_locations: 1
+
+number_of_age_classes: 7
+
+population_size: [100000]
+
+# total number of degree of affinity (j = 0..M-1)
+# the formular still apply index from 1 to M
+M: 10
+
+# total number of virus replicative ability (k = 0..N-1)
+# the formular still apply index from 1 to N
+N: 40
+
+initial_cases: 
+  number: 1
+  strain: [6,20]
+
+#[0-5    6-15    16-25   26-34  35-49   50-64  64-]
+age_distribution: [0.0731, 0.1895, 0.1717, 0.1254 , 0.2605, 0.1340, 0.0458]
+  
+# mutation rate read from input file
+mutation_rate: 0.05
+
+
+# fraction of I-individuals will be quarantined
+q: 0.25
+
+# Maximum allowable case fatality
+CFmax: 0.9
+
+# alpha will be calculated from min, max and M
+alpha:
+  min: 0.0
+  max: 1.0
+ 
+  
+#beta will be calculated from a0, a1 read from input file  
+#a1: [3-10]
+#a0: []
+beta: 
+  a0: 0.6
+  a1: 4  
+
+R0max: 2.5
+
+# c, and a2 used to calculate virual burden B
+B:
+  a2: 1.75
+  c: 10.0  
+
+# fraction of I individuals progressing to severe disease that are hospitalized
+h: 0.7
+
+# eta: reduced factor of mortality for H-Individuals
+eta: 0.5
+
+#recovery rate v: minimum recovery rates for infected individuals (input file)
+# 5 days / 9days
+#v: 0.2
+v: 0.11
+
+#recovery rate vv: minimum recovery rates for severely infected individuals (input file) 
+# 7 days / 15 days
+#vv: 0.14
+vv: 0.0667
+#        
+
+# magnitude of the effect that LRT burden has on rate of progresssion to severe
+sigmaI: 3
+
+# magnitude of the effect that LRT burden has on rate of progresssion to death
+sigmaV: 3
+
+
+
+
+
+# tau^-1: time from symptoms to quarantine, read from input file
+# 2 days
+tau_1: 2
+
+# time from Expose progress to Infectious (in days)
+time_E_to_I: 2
+
+level_of_mixing:
+  zI: 1
+  zQ: 0.5
+  zV: 0.8
+  zH: 0.5
+  
+  
+number_of_generations_for_R0: 7
+
+coeff_ItoQ: 0.1
+coeff_EtoI: 0.1
+coeff_others: 0.3
+
+report_period: 1
+
+
+# relaxing_in : number of day to return back to the origin transmission rate
+# relaxing_in = 0 means no relaxing
+# trigger_at = 0 means no social 
+#
+social_distancing:
+  trigger_at: 0 
+  reducing_by: 0.1
+  relaxing_in: 0

@@ -1,0 +1,2 @@
+initial_j	initial_k	R0max	mu	sigmaI	sigmaV	a2	c	q	h	zQzH	zV
+5	10	3	0.01	3	3	2	8	0.2	0.4	0.05	0.6	

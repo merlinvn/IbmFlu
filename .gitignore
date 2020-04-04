@@ -1,0 +1,19 @@
+build*
+bin
+.idea
+.vscode
+.vs
+node_modules
+Testing
+cmake-*
+monthly_data\.txt
+
+.DS_Store
+
+reporter\.txt
+
+# Ignore the backup of the UML diagram
+documentation/MaSim.uml~
+
+# Ingore the "default" output directory
+out
