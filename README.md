@@ -20,7 +20,7 @@ sudo apt install libgsl-dev
 sudo apt install libyaml-cpp-dev
 ```
 
-# Building
+### Building
 While building with `make` the `-j` switch may be used to control the number of cores used.
 
 ```bash
@@ -29,3 +29,6 @@ cd build
 cmake .. 
 make -j 4
 ```
+
+## Windows 10 + Visual Studio 2019
+Use Cmake GUI to generate VS C++ project.
